@@ -1,0 +1,19 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "printWidth": 80,
+  "semi": true,
+  "endOfLine": "auto",
+
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}
