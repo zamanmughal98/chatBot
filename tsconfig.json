@@ -6,7 +6,16 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": false,
+    "rootDir": "src",
+    "incremental": true,
+    "typeRoots": ["./types"]
   },
   "include": ["src/**/*.ts", "types/**/*.d.ts"]
 }
