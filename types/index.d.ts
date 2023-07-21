@@ -1,13 +1,24 @@
-type IFAQs = IQuestionAnswer[];
-
-type Iquestion = string;
-
-type IqList = question[];
-
-type Ianswer = string;
-
 interface IQuestionAnswer {
-  question: question;
-  answer: answer;
+  question: Iquestion;
+  answer: Ianswer;
 }
-type IchatBot = void;
+interface IQuestionRequest {
+  question: Iquestion;
+}
+interface IValidationError {
+  type?: string;
+  value?: string;
+  msg?: string;
+  path?: string;
+  location?: string;
+}
+interface IQuestionResponse {
+  Error?: IValidationError[];
+  answer?: Ianswer;
+  error?: string;
+}
+
+type IFAQs = IQuestionAnswer[];
+type Iquestion = string;
+type IqList = question[];
+type Ianswer = string;

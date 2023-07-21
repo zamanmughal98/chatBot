@@ -85,7 +85,14 @@ export const getAnswer = (question: Iquestion): Ianswer => {
     }
   }
 
-  return sorry;
+  return sorryMessage;
 };
 
-const sorry: Ianswer = "I'm sorry, I don't have an answer to that question.";
+const sorryMessage: Ianswer =
+  "I'm sorry, I don't have an answer to that question.";
+
+export const validationMessage = {
+  empty: 'Question field cannot be empty',
+  string: 'Question Must be of type String',
+  minLength: 'Question Must be 2 characters long',
+};
